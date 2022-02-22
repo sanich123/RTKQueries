@@ -5,9 +5,9 @@ export default function App() {
   const [count, setCount] = useState('');
   const [newProduct, setNewProduct] = useState('');
 
-  const [addProduct, {isError}] = useAddProductMutation();
+  const [addProduct, {isError, isSuccess, isUninitialized}] = useAddProductMutation();
   const [deleteProduct] = useDeleteProductMutation();
-  const {data = [], isLoading } = useGetGoodsQuery(count);
+  const {data = [], isLoading, error } = useGetGoodsQuery(count);
 
   const handleAddProduct = async () => {
     if (newProduct) {
@@ -17,12 +17,14 @@ export default function App() {
     }
     setNewProduct('');
   };
+  console.log(isError, isSuccess, isUninitialized);
 
   const handleDeleteProduct = async (id) => {
     await deleteProduct(id).unwrap();
   }
 
   if (isLoading) return <h1>Loading...</h1>
+  if (error) return <h1>{error.status} {error.error}</h1>
 
   return (
     <div className="App">
