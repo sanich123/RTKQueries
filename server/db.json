@@ -1,0 +1,63 @@
+{
+  "goods": [
+    {
+      "name": "cars",
+      "id": 2
+    },
+    {
+      "name": "asdfwef",
+      "id": 5
+    },
+    {
+      "name": "asdfwef",
+      "id": 7
+    },
+    {
+      "name": "sdfwef",
+      "id": 9
+    }
+  ],
+  "notebooks": [
+    {
+      "brand": "Asus",
+      "id": 1,
+      "model": "JIEJL899",
+      "screen": 14,
+      "system": "noOs",
+      "memory": 8,
+      "price": 1500,
+      "touchscreen": false,
+      "rating": 135
+    },
+    {
+      "brand": "Apple",
+      "id": 2,
+      "model": "MacBook Pro",
+      "screen": 15,
+      "system": "MacOs",
+      "memory": 16,
+      "touchscreen": true,
+      "rating": 13
+    },
+    {
+      "brand": "Acer",
+      "id": 3,
+      "model": "Inspire JOI798",
+      "screen": 17,
+      "system": "Windows",
+      "memory": 4,
+      "touchscreen": false,
+      "rating": 14
+    },
+    {
+      "brand": "Lenovo",
+      "id": 4,
+      "model": "GoBack Putin",
+      "screen": 17,
+      "system": "Windows",
+      "memory": 6,
+      "touchscreen": false,
+      "rating": 234
+    }
+  ]
+}
